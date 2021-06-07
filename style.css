@@ -1,0 +1,213 @@
+body {
+    flex-direction: column;
+    display: flex;
+    background-color:whitesmoke;
+    
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #2a607c;
+    color: whitesmoke;
+}
+
+.header {
+    justify-content: flex-start;
+}
+
+.header h1 {
+    color: floralwhite;
+    margin: 5px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.header ul {
+    justify-content: flex-end;
+}
+
+.header li {
+    display: inline;
+    font-size: 20px;
+}
+
+.header a {
+    color: whitesmoke;
+    font-weight: bolder;
+    text-decoration-line: none;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.hero {
+    display: flex;
+}
+
+
+.hero img {
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    justify-content: center;
+}
+
+.about-me {
+    margin-top: 10px;
+    padding: 15px;
+
+}
+
+.about-me .column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 100%;
+    border-right: #2a607c solid 5px;
+}
+
+.about-me .column2 {
+    float: right;
+    width: 80%;
+    padding: 10px;
+    height: 100%;
+}
+
+.about-me:after {
+    content: "";
+    display: table;
+    clear:both
+}
+
+.about-me h1 {
+    float: right;
+    font-size: 50px;
+}
+
+.my-work {
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+}
+
+.my-work h1 {
+    float: right;
+    font-size: 50px;
+}
+
+.my-work .column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 100%;
+    border-right: #2a607c solid 5px;
+}
+
+.my-work .column2 {
+    float: right;
+    width: 80%;
+    padding: 10px;
+    height: 100%;
+}
+
+.my-work:after {
+    content: "";
+    display: table;
+    clear:both
+}
+
+.footer {
+    text-align: center;
+}
+
+.my-work .card1 img {
+    width: 40%;
+    height: 90%;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 20px;
+    filter: grayscale(60%);
+}
+
+.my-work .card1 img:hover {
+    filter: grayscale(0%);
+    width: 50%;
+    height: 95%
+}
+
+.my-work .card2 img {
+    width: 40%;
+    height: 90%;
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 20px;
+    filter: grayscale(60%);
+}
+
+.my-work .card2 img:hover {
+    filter: grayscale(0%);
+    width: 50%;
+    height: 95%
+}
+
+.my-work .card3 img {
+    width: 40%;
+    height: 90%;
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 20px;
+    filter: grayscale(60%);
+}
+
+.my-work .card3 img:hover {
+    filter: grayscale(0%);
+    width: 50%;
+    height: 95%
+}
+
+.my-work .card4 img {
+    width: 40%;
+    height: 90%;
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 20px;
+    filter: grayscale(60%);
+}
+
+.my-work .card4 img:hover {
+    filter: grayscale(0%);
+    width: 50%;
+    height: 95%
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    font-size: 150px;
+    color: whitesmoke;
+}
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  .header img {
+    position: absolute;
+    left: 900px ;
+    width: 4.5%;
+}
