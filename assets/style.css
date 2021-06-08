@@ -1,223 +1,227 @@
-*{
-    box-sizing:border-box
+/* The CSS file need to follow the same order as the HTML for an easy reading */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    flex-direction: column;
-    display: flex;
-    background-color:whitesmoke;
-    
-}
-
-header .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    background-color: #2a607c;
-    color: whitesmoke;
+    background-color: #d9dcd6;
 }
 
 .header {
-    justify-content: flex-start;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
 }
 
 .header h1 {
-    color: floralwhite;
-    margin: 5px;
-    padding: 5px;
-    font-size: 30px;
+    display: inline-block;
+    font-size: 48px;
 }
 
-.header ul {
-    justify-content: flex-end;
-}
 
-.header li {
-    display: inline;
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-.header a {
-    color: whitesmoke;
-    font-weight: bolder;
-    text-decoration-line: none;
-    padding: 10px;
-    margin: 10px;
-    
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
 }
-
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
 .hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./img/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    font-size:35px
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 100px; 
+}
+  
+.left {
+    width: 15%;
+    border-right: #2a607c solid;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.right {
+    width: 85%;
+    margin-bottom: 20px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h3 {
+    font-size:35px
+}
+
+.column2 {
+    float: left;
+    padding: 10px;
+    height: 225px; 
+}
+  
+.left2 {
+    width: 15%;
+    border-right: #2a607c solid;
+    margin-top: 20px;
+    text-align:center
+}
+  
+.right2 {
+    width: 85%;
+    margin-top: 20px;
+    display: flex;
+}
+  
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column3 {
+    float: left;
+    padding: 10px;
+    height: 250px; 
+}
+  
+.left3 {
+    width: 15%;
+    border-right: #2a607c solid;
+   
+}
+  
+.right3 {
+    width: 85%;
+    display: flex;
+
+}
+  
+
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column4 {
+    float: left;
+    padding: 10px;
+    height: 250px; 
+}
+  
+.left4 {
+    width: 15%;
+    border-right: #2a607c solid;
+}
+  
+.right4 {
+    width: 85%;
     display: flex;
 }
 
-
-.hero img {
-    flex-wrap: wrap;
-    flex-flow: column wrap;
-    width: 100%;
-}
-
-.content {
-    width: 100%;
-    justify-content: center;
-}
-
-.about-me {
-    margin-top: 10px;
-    padding: 15px;
-
-}
-
-.about-me .column1 {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    height: 100%;
-    border-right: #2a607c solid 5px;
-}
-
-.about-me .column2 {
-    float: right;
-    width: 80%;
-    padding: 10px;
-    height: 100%;
-}
-
-.about-me:after {
+.row4:after {
     content: "";
     display: table;
-    clear:both
+    clear: both;
 }
 
-.about-me h1 {
-    float: right;
-    font-size: 50px;
+.column2  .card1 img {
+    width: 50%;
+    border-radius: 20px;
+    filter: grayscale(60%);
+    box-shadow:10px 10px 10px 5px grey
 }
 
-.my-work {
-    margin-top: 10px;
-    padding: 15px;
-    display: flex;
+.column2 .card1 img:hover {
+    filter: grayscale(0%);
+    width: 60%;
 }
 
-.my-work h1 {
-    float: right;
-    font-size: 50px;
+.column3 .card2 img {
+    width: 50%;
+    margin: 10px;
+    border-radius: 20px;
+    filter: grayscale(60%);
+    box-shadow:10px 10px 10px 5px grey
 }
 
-.my-work .column1 {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    height: 100%;
-    border-right: #2a607c solid 5px;
+.column3 .card2 img:hover {
+    filter: grayscale(0%);
+    width: 60%;
 }
 
-.my-work .column2 {
-    float: right;
-    width: 80%;
-    padding: 10px;
-    height: 100%;
+.column3 .card3 img {
+    width: 50%;
+    margin: 10px;
+    border-radius: 20px;
+    filter: grayscale(60%);
+    box-shadow:10px 10px 10px 5px grey
 }
 
-.my-work:after {
-    content: "";
-    display: table;
-    clear:both
+.column3 .card3 img:hover {
+    filter: grayscale(0%);
+    width: 60%;
+}
+
+.column4 .card4 img {
+    width: 50%;
+    margin: 10px;
+    border-radius: 20px;
+    filter: grayscale(60%);
+    box-shadow:10px 10px 10px 5px grey
+}
+
+.column4 .card5 img:hover {
+    filter: grayscale(0%);
+    width: 60%;
+}
+
+.column4 .card5 img {
+    width: 50%;
+    margin: 10px;
+    border-radius: 20px;
+    filter: grayscale(60%);
+    box-shadow:10px 10px 10px 5px grey
+}
+
+.column4 .card4 img:hover {
+    filter: grayscale(0%);
+    width: 60%;
+}
+
+
+footer {
+    background-color: #2a607c;
+    color: whitesmoke;
+    margin-top: 40px;
 }
 
 .footer {
     text-align: center;
 }
-
-.my-work .card1 img {
-    width: 30%;
-    height: 90%;
-    justify-content: flex-start;
-    padding: 0px;
-    margin: 10px;
-    border-radius: 20px;
-    filter: grayscale(60%);
-}
-
-.my-work .card1 img:hover {
-    filter: grayscale(0%);
-    width: 40%;
-    height: 95%
-}
-
-.my-work .card2 img {
-    width: 30%;
-    height: 90%;
-    justify-content: flex-end;
-    padding: 0px;
-    margin: 10px;
-    border-radius: 20px;
-    filter: grayscale(60%);
-}
-
-.my-work .card2 img:hover {
-    filter: grayscale(0%);
-    width: 40%;
-    height: 95%
-}
-
-.my-work .card3 img {
-    width: 30%;
-    height: 90%;
-    justify-content: flex-end;
-    padding: 0px;
-    margin: 10px;
-    border-radius: 20px;
-    filter: grayscale(60%);
-}
-
-.my-work .card3 img:hover {
-    filter: grayscale(0%);
-    width: 40%;
-    height: 95%
-}
-
-.my-work .card4 img {
-    width: 30%;
-    height: 90%;
-    justify-content: flex-end;
-    padding: 0px;
-    margin: 10px;
-    border-radius: 20px;
-    filter: grayscale(60%);
-}
-
-.my-work .card4 img:hover {
-    filter: grayscale(0%);
-    width: 40%;
-    height: 95%
-}
-
-
-.container {
-    position: relative;
-    text-align: center;
-    font-size: 150px;
-    color: whitesmoke;
-}
-  
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-  .header img {
-    position: absolute;
-    left: 50% ;
-    width: 4.5%;
-}
-
-footer {
-    background-color: #2a607c;
-    color: whitesmoke;
-}
-
