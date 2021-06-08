@@ -13,7 +13,7 @@ body {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
+    color: whitesmoke;
 }
 
 .header h1 {
@@ -152,7 +152,7 @@ h3 {
 }
 
 .column2  .card1 img {
-    width: 50%;
+    width: 25%;
     border-radius: 20px;
     filter: grayscale(60%);
     box-shadow:10px 10px 10px 5px grey
@@ -160,7 +160,7 @@ h3 {
 
 .column2 .card1 img:hover {
     filter: grayscale(0%);
-    width: 60%;
+    width: 30%;
 }
 
 .column3 .card2 img {
