@@ -260,6 +260,11 @@ footer {
     header {
         text-align:center
     }
+
+    .column, .column2, .column3, .column4 {
+        width:auto
+    }
+}
 }
 
 
@@ -281,4 +286,9 @@ footer {
     header {
         text-align:center
     }
+
+    .column, .column2, .column3, .column4 {
+        width:auto
+    }
+}
 }
