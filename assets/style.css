@@ -9,8 +9,8 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
-    padding: 20px;
+header {
+    padding: 1%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: whitesmoke;
@@ -19,22 +19,23 @@ body {
 .header h1 {
     display: inline-block;
     font-size: 48px;
+    margin-bottom: 20px;
 }
 
 
-.nav {
+nav {
     display: flex;
     justify-content: flex-start;
     background-color: #2a607c;
     padding-bottom: 10px;
 }
 
-.nav li {
+nav li {
     display: inline;
     font-size: 17px;
 }
 
-.nav a {
+nav a {
     color: whitesmoke;
     font-weight: bolder;
     padding: 7px;
@@ -242,13 +243,12 @@ footer {
 
 
 @media screen and (max-width:768px) {
-    
-    .nav li {
+    nav li {
         display:block;
         font-size: 60px;
     }
 
-    .nav a {
+    nav a {
         color: whitesmoke;
         font-weight: bolder;
         text-decoration-line: none;
