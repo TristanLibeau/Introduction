@@ -242,10 +242,10 @@ footer {
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:375px) {
     nav li {
         display:block;
-        font-size: 60px;
+        font-size: 30px;
     }
 
     nav a {
@@ -255,5 +255,30 @@ footer {
         padding: 7px;
         margin: 10px;
         border: none;
+    }
+
+    header {
+        text-align:center
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    nav li {
+        display:block;
+        font-size: 30px;
+    }
+
+    nav a {
+        color: whitesmoke;
+        font-weight: bolder;
+        text-decoration-line: none;
+        padding: 7px;
+        margin: 10px;
+        border: none;
+    }
+
+    header {
+        text-align:center
     }
 }
