@@ -39,9 +39,12 @@ a {
     text-decoration: none;
 }
 .hero {
-    height: 500px;
+    height: 800px;
     width: 100%;
-    margin-bottom: 700px;
+    margin-bottom: 25px;
+    background-image: url("../img/background-image.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 h2 {
