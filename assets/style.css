@@ -16,7 +16,6 @@ header {
     color: whitesmoke;
 }
 
-}
 
 .header h1 {
     display: inline-block;
@@ -24,7 +23,7 @@ header {
    
 }
 
-
+/* Take care of the navigation bar */
 nav {
     display: flex;
     justify-content: flex-start;
@@ -48,11 +47,7 @@ nav a {
     border-radius: 25px;
 }
 
-}
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
+/* Take care of the main image */
 .hero {
     height: 800px;
     width: 100%;
@@ -66,6 +61,7 @@ h2 {
     font-size:35px
 }
 
+/* Take care of the colunm for the section about-me */
 .column {
     float: left;
     padding: 10px;
@@ -94,6 +90,7 @@ h3 {
     font-size:35px
 }
 
+/* Take care of the column in my-work section */
 .column2 {
     float: left;
     padding: 10px;
@@ -119,6 +116,19 @@ h3 {
     clear: both;
 }
 
+.column2  .card1 img {
+    width: 25%;
+    border-radius: 20px;
+    filter: grayscale(60%);
+    box-shadow:10px 10px 10px 5px grey
+}
+
+.column2 .card1 img:hover {
+    filter: grayscale(0%);
+    width: 30%;
+}
+
+/* Take care of the column for the work 2 and 3 */
 .column3 {
     float: left;
     padding: 10px;
@@ -142,40 +152,6 @@ h3 {
     content: "";
     display: table;
     clear: both;
-}
-
-.column4 {
-    float: left;
-    padding: 10px;
-    height: 250px; 
-}
-  
-.left4 {
-    width: 15%;
-    border-right: #2a607c solid;
-}
-  
-.right4 {
-    width: 85%;
-    display: flex;
-}
-
-.row4:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column2  .card1 img {
-    width: 25%;
-    border-radius: 20px;
-    filter: grayscale(60%);
-    box-shadow:10px 10px 10px 5px grey
-}
-
-.column2 .card1 img:hover {
-    filter: grayscale(0%);
-    width: 30%;
 }
 
 .column3 .card2 img {
@@ -204,6 +180,29 @@ h3 {
     width: 60%;
 }
 
+/* Take care of the column for the work 4 and 5 */
+.column4 {
+    float: left;
+    padding: 10px;
+    height: 250px; 
+}
+  
+.left4 {
+    width: 15%;
+    border-right: #2a607c solid;
+}
+  
+.right4 {
+    width: 85%;
+    display: flex;
+}
+
+.row4:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .column4 .card4 img {
     width: 50%;
     margin: 10px;
@@ -230,7 +229,7 @@ h3 {
     width: 60%;
 }
 
-
+/* Take care of the footer */
 footer {
     background-color: #2a607c;
     color: whitesmoke;
@@ -242,7 +241,13 @@ footer {
 }
 
 
+/* Take care of the design of the website for Screen-size phone */
 @media screen and (max-width:375px) {
+    
+    header {
+        text-align:center
+    }
+
     nav li {
         display:block;
         font-size: 30px;
@@ -257,18 +262,23 @@ footer {
         border: none;
     }
 
-    header {
-        text-align:center
-    }
-
     .column, .column2, .column3, .column4 {
         width:auto
     }
-}
+
+    .left, .left1, .left2, .left3, .left4 {
+        border-right:none
+   
+    }
 }
 
-
+/* Take care of the design of the website for Screen-size tablet */
 @media screen and (max-width:768px) {
+    
+    header {
+        text-align:center
+    }
+
     nav li {
         display:block;
         font-size: 30px;
@@ -283,12 +293,11 @@ footer {
         border: none;
     }
 
-    header {
-        text-align:center
-    }
-
     .column, .column2, .column3, .column4 {
         width:auto
     }
-}
+
+    .left1, .left2, .left3, .left4 {
+        border-right:none
+    }
 }
