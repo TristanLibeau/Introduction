@@ -23,6 +23,11 @@ header {
    
 }
 
+.header p {
+    font-size: 35px;
+    text-align: right;   
+}
+
 /* Take care of the navigation bar */
 nav {
     display: flex;
@@ -78,6 +83,7 @@ h2 {
 .right {
     width: 85%;
     margin-bottom: 20px;
+    height:fit-content
 }
   
 .row:after {
@@ -277,6 +283,14 @@ footer {
     
     header {
         text-align:center
+    }
+
+    .header p {
+        text-align:center
+    }
+
+    nav {
+        justify-content:center
     }
 
     nav li {
