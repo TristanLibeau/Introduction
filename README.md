@@ -32,7 +32,7 @@ This is my actual first web page, I did this work from scratch to show potential
 
 This is a gif of the expected behavior.
 
-![mock-up](./img/mock-up-my-introduction.png)
+![mock-up](./img/mock-up-my-introduction.gif)
 
 # Credits
 
